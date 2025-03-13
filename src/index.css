@@ -1,0 +1,20 @@
+@import "tailwindcss";
+/* @plugin "daisyui"; */
+.modal{
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 400px;
+height: 200px;
+padding: 10px;
+background-color: crimson;
+color: #fff;
+border-radius: 7px;
+}
+
+.modal_button{
+    margin-top: auto;
+}
+
+ 
