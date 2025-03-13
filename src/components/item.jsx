@@ -11,7 +11,12 @@ function Item({ t, deleteTitle }) {
         <p><span className="text-gray-400">Your name:</span> {t.name}</p>
         <p><span className="text-gray-400">Your message:</span> {t.title}</p>
         </div>
-        <button onClick={() => setShowModal(true)} className="text-red-400 border border-red-500 py-2 px-4 rounded-md active:scale-90 transition transform duration-150">Delete</button>
+       <div className="flex gap-1">
+       <button  className="text-red-400 border border-red-500 py-1  rounded-md active:scale-90 transition transform duration-150">Edit ✏</button>
+        <button onClick={() => setShowModal(true)} className="text-red-400 border border-red-500 py-1 px-2 rounded-md active:scale-90 transition transform duration-150">
+          Delete</button>
+       </div>
+          
       </li>
     </>
   );

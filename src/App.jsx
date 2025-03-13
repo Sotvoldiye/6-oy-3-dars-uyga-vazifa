@@ -13,6 +13,13 @@ function App() {
   const [error, setError] = useState(false);
   const [errorName, setErrorName] = useState(false)
   const [titles, setTitles] = useState(initalValue());
+  const [edit, setEdit] = useState('')
+
+
+// const edited = ()=>{
+ 
+// }
+// setEdit(edited)
   useEffect(() => {
     let s;
     if (error) {
@@ -70,6 +77,7 @@ function App() {
           id: Math.random(),
           name: name
         },
+        
       ]);
 
       setText("");
@@ -78,6 +86,8 @@ function App() {
       setErrorName(false)
     }
   };
+
+ 
 
   return (
     <div className="flex flex-col items-center mt-10">
@@ -91,6 +101,7 @@ function App() {
           name={name}
           setName={setName}
           errorName= {errorName}
+          
         />
         <ul className="flex flex-col gap-6 mt-4">
           {!titles.length && <h2>You Don't have any Message 🧐</h2>}
